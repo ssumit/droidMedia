@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/droidMedia.iml" filepath="$PROJECT_DIR$/droidMedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open/src/image/image.iml" filepath="$PROJECT_DIR$/open/src/image/image.iml" />
     </modules>
   </component>
 </project>
