@@ -13,7 +13,7 @@ public class Dispatcher {
         _pendingRequests = new ArrayList<IRequest>();
         _currentRequests = new ArrayList<IRequest>();
         _listener = getListener();
-        _schedulingPolicy = null;
+        _schedulingPolicy = getSchedulingPolicy();
         MAX_CONCURRENT_REQUEST = 50; //todo read from properties file
     }
 
@@ -60,5 +60,19 @@ public class Dispatcher {
             IRequest request = _schedulingPolicy.getNextRequest(_pendingRequests);
             fireRequest(request);
         }
+    }
+
+    private ISchedulingPolicy getSchedulingPolicy() {
+        return new ISchedulingPolicy() {
+            @Override
+            public IRequest getNextRequest(List<IRequest> requests) {
+                if (requests == null || requests.size() == 0) {
+                    return null;
+                }
+                else {
+                    return requests.get(0);
+                }
+            }
+        };
     }
 }
