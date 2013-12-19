@@ -1,23 +1,25 @@
-import java.util.ArrayList;
+package com.example.utils;
+
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Dispatcher {
 
-    private List<IRequest> _pendingRequests;
-    private List<IRequest> _currentRequests;
+    private final List<IRequest> _pendingRequests;
+    private final List<IRequest> _currentRequests;
     private ISchedulingPolicy _schedulingPolicy;
     private int MAX_CONCURRENT_REQUEST;
     private IRequest.Listener _listener;
 
     public Dispatcher() {
-        _pendingRequests = new ArrayList<IRequest>();
-        _currentRequests = new ArrayList<IRequest>();
+        _pendingRequests = new CopyOnWriteArrayList<IRequest>();
+        _currentRequests = new CopyOnWriteArrayList<IRequest>();
         _listener = getListener();
         _schedulingPolicy = getSchedulingPolicy();
         MAX_CONCURRENT_REQUEST = 50; //todo read from properties file
     }
 
-    public void setRetryPolicy(ISchedulingPolicy retryPolicy) {
+    public void setSchedulingPolicy(ISchedulingPolicy retryPolicy) {
         _schedulingPolicy = retryPolicy;
     }
 
@@ -46,11 +48,15 @@ public class Dispatcher {
         return false;
     }
 
-    public IRequest.Listener getListener() {
+    private IRequest.Listener getListener() {
         return new IRequest.Listener() {
             @Override
             public void onFinish() {
                 firePendingRequests();
+            }
+
+            @Override
+            public void progress(String url, long dataDownloaded, long totalSize) {
             }
         };
     }

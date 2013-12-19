@@ -1,3 +1,5 @@
+package com.example.image;
+
 class ConfigConstant {
     private final String DISK_CACHE = "disk_cache";
     private final String DISK_CACHE_SIZE = "disk_cache_size";
