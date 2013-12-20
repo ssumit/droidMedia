@@ -2,5 +2,7 @@ package com.example.cache;
 
 public interface ILRUCacheEntry extends ICacheEntry{
 
-    public int getTimeSinceLastUse();
+    public int getUsedTime();
+
+    public void setUsedTime();
 }
