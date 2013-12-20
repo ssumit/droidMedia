@@ -50,7 +50,12 @@ public class ImageRequest implements IRequest {
     }
 
     @Override
-    public void addListener(Listener listener) {
+    public void setListener(Listener listener) {
         _listener = listener;
+    }
+
+    @Override
+    public Listener getListener() {
+        return _listener;
     }
 }

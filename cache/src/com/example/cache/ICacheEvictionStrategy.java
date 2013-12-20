@@ -2,7 +2,7 @@ package com.example.cache;
 
 import java.util.List;
 
-public interface ICacheEvictionStrategy {
+public interface ICacheEvictionStrategy<T> {
 
-    public ICacheEntry getEvictedCacheEntry(List<ICacheEntry> cacheEntries);
+    public T getEvictedCacheEntry(List<T> cacheEntries);
 }

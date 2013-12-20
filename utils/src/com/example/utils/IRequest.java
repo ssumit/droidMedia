@@ -10,7 +10,9 @@ public interface IRequest {
 
     public void cancel();
 
-    public void addListener(Listener listener);
+    public void setListener(Listener listener);
+
+    public Listener getListener();
 
     public interface Listener {
         /**

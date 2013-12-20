@@ -5,7 +5,7 @@ public interface ICacheEntry {
     /**
      * This will be particular to the consumer using this cache. If false, these entries should be evicted first.
      */
-    public void isValid();
+    public boolean isValid();
 
     public int getSize();
 }

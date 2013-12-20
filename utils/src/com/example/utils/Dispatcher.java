@@ -15,7 +15,7 @@ public class Dispatcher {
         _pendingRequests = new CopyOnWriteArrayList<IRequest>();
         _currentRequests = new CopyOnWriteArrayList<IRequest>();
         _listener = getListener();
-        _schedulingPolicy = getSchedulingPolicy();
+        _schedulingPolicy = getDefaultSchedulingPolicy();
         MAX_CONCURRENT_REQUEST = 50; //todo read from properties file
     }
 
@@ -36,7 +36,7 @@ public class Dispatcher {
 
     private void fireRequest(IRequest request) {
         _currentRequests.add(request);
-        request.addListener(_listener);
+        request.setListener(_listener);
         request.execute();
     }
 
@@ -45,7 +45,9 @@ public class Dispatcher {
             _pendingRequests.remove(request);
             return true;
         }
-        return false;
+        else {
+            return false;
+        }
     }
 
     private IRequest.Listener getListener() {
@@ -62,23 +64,15 @@ public class Dispatcher {
     }
 
     private void firePendingRequests() {
-        while (_currentRequests.size() < MAX_CONCURRENT_REQUEST && _pendingRequests.size() > 0) {
+        while (_currentRequests.size() < MAX_CONCURRENT_REQUEST) {
             IRequest request = _schedulingPolicy.getNextRequest(_pendingRequests);
-            fireRequest(request);
+            if (request != null) {
+                fireRequest(request);
+            }
         }
     }
 
-    private ISchedulingPolicy getSchedulingPolicy() {
-        return new ISchedulingPolicy() {
-            @Override
-            public IRequest getNextRequest(List<IRequest> requests) {
-                if (requests == null || requests.size() == 0) {
-                    return null;
-                }
-                else {
-                    return requests.get(0);
-                }
-            }
-        };
+    private ISchedulingPolicy getDefaultSchedulingPolicy() {
+        return new FCFSSchedulingPolicy();
     }
 }
