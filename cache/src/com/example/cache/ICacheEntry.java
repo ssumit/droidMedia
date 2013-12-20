@@ -8,4 +8,5 @@ public interface ICacheEntry {
     public boolean isValid();
 
     public int getSize();
+
 }
