@@ -33,8 +33,8 @@ public class ImageRequestManager {
     }
 
     public void addRequest(ImageRequest request) {
-        preProcessRequest(request);
         //todo: see if the request has already been served
+        preProcessRequest(request);
         _dispatcher.addRequest(request);
     }
 

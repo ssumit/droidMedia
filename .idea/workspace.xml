@@ -73,14 +73,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageRequestManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImageRequestManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="20" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.4250871" vertical-offset="401" max-vertical-offset="1050">
+            <state line="45" column="29" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1050">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#741#742#0" expanded="true" />
                 <element signature="e#771#772#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpClient.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/transport/src/com/example/transport/HttpClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="35" selection-start="294" selection-end="294" vertical-scroll-proportion="0.33972126" vertical-offset="0" max-vertical-offset="574">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,6 +155,7 @@
         <option value="$PROJECT_DIR$/utils/src/com/example/utils/IRequest.java" />
         <option value="$PROJECT_DIR$/utils/src/com/example/utils/Dispatcher.java" />
         <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestManager.java" />
+        <option value="$PROJECT_DIR$/transport/src/com/example/transport/HttpClient.java" />
       </list>
     </option>
   </component>
@@ -194,7 +206,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="transport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -204,7 +216,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="transport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -212,17 +224,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="droidMedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
+              <option name="myItemId" value="transport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,7 +438,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23413897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23413897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -747,20 +749,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="38" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="930">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setPlaceHolder#0;class#ImageRequest#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/IRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="24" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="29" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1050">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -773,13 +776,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestManager.java">
+    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="20" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.4250871" vertical-offset="401" max-vertical-offset="1050">
+        <state line="35" column="38" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="930">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
+            <element signature="method#setPlaceHolder#0;class#ImageRequest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transport/src/com/example/transport/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="294" selection-end="294" vertical-scroll-proportion="0.33972126" vertical-offset="0" max-vertical-offset="574">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

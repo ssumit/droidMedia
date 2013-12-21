@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/cache/cache.iml" filepath="$PROJECT_DIR$/cache/cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/droidMedia.iml" filepath="$PROJECT_DIR$/droidMedia.iml" />
       <module fileurl="file://$PROJECT_DIR$/open/src/image/image.iml" filepath="$PROJECT_DIR$/open/src/image/image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport/transport.iml" filepath="$PROJECT_DIR$/transport/transport.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>
