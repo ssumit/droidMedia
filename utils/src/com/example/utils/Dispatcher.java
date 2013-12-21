@@ -53,7 +53,7 @@ public class Dispatcher {
     private IRequest.Listener getListener() {
         return new IRequest.Listener() {
             @Override
-            public void onFinish() {
+            public void onFinish(String url, Object file) {
                 firePendingRequests();
             }
 

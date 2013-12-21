@@ -9,10 +9,10 @@ public class ImageRequest implements IRequest {
     private ImageView _imageView;
     private int _drawableId = -1;
     private Listener _listener;
-    private ImageRequestDispatcher _requestDispatcher;
+    private ImageRequestManager _requestManager;
 
     public ImageRequest() {
-        _requestDispatcher = ImageRequestDispatcher.getInstance();
+        _requestManager = ImageRequestManager.getInstance();
     }
 
     public ImageRequest fetch(String url) {
@@ -32,9 +32,8 @@ public class ImageRequest implements IRequest {
 
     public void execute() {
         setPlaceHolderIntoImageView();
-        if (_url != null)
-        {
-            _requestDispatcher.addRequest(this);
+        if (_url != null) {
+            _requestManager.addRequest(this);
         }
     }
 
@@ -46,7 +45,7 @@ public class ImageRequest implements IRequest {
 
     @Override
     public void cancel() {
-        _requestDispatcher.cancelRequest(this);
+        _requestManager.cancelRequest(this);
     }
 
     @Override

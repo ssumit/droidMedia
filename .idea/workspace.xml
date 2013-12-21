@@ -64,47 +64,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ILRUCacheEntry.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/ILRUCacheEntry.java">
+      <file leaf-file-name="IRequest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/IRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+            <state line="22" column="24" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemCache.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/MemCache.java">
+      <file leaf-file-name="ImageRequestManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="945">
+            <state line="43" column="20" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.4250871" vertical-offset="401" max-vertical-offset="1050">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LRUCache.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/LRUCache.java">
+      <file leaf-file-name="ImageRequest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+            <state line="35" column="38" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="930">
               <folding>
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#990#991#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#setPlaceHolder#0;class#ImageRequest#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICacheEvictionStrategy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/ICacheEvictionStrategy.java">
+      <file leaf-file-name="Dispatcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/Dispatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding />
+            <state line="28" column="53" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="1230">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,20 +129,21 @@
         <option value="$PROJECT_DIR$/utils/src/com/example/image/ConfigConstant.java" />
         <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageClient.java" />
         <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestdispatcher.java" />
-        <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestDispatcher.java" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/SimpleCache.java" />
         <option value="$PROJECT_DIR$/utils/src/com/example/utils/FCFSSchedulingPolicy.java" />
-        <option value="$PROJECT_DIR$/utils/src/com/example/utils/Dispatcher.java" />
-        <option value="$PROJECT_DIR$/utils/src/com/example/utils/IRequest.java" />
-        <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequest.java" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/README.md" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/ICacheEntry.java" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/ICache.java" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/LRUCacheEviction.java" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/ICacheEvictionStrategy.java" />
-        <option value="$PROJECT_DIR$/cache/src/com/example/cache/MemCache.java" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/ILRUCacheEntry.java" />
         <option value="$PROJECT_DIR$/cache/src/com/example/cache/LRUCache.java" />
+        <option value="$PROJECT_DIR$/cache/src/com/example/cache/MemCache.java" />
+        <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestDispatcher.java" />
+        <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequest.java" />
+        <option value="$PROJECT_DIR$/utils/src/com/example/utils/IRequest.java" />
+        <option value="$PROJECT_DIR$/utils/src/com/example/utils/Dispatcher.java" />
+        <option value="$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestManager.java" />
       </list>
     </option>
   </component>
@@ -222,52 +223,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="droidMedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="droidMedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="droidMedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -459,14 +414,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1368" height="721" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="24" width="1368" height="721" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.82861894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.82861894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -481,7 +436,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17598188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23413897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -713,54 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ConfigConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="300" selection-end="300" vertical-scroll-proportion="0.1124197" vertical-offset="0" max-vertical-offset="934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/IRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/FCFSSchedulingPolicy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1005">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setPlaceHolder#0;class#ImageRequest#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,24 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/ILRUCacheEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/MemCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/LRUCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
@@ -825,6 +718,68 @@
             <element signature="e#918#919#0" expanded="true" />
             <element signature="e#990#991#0" expanded="true" />
             <element signature="e#1038#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/MemCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="945">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/src/com/example/cache/ILRUCacheEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ConfigConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="38" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="930">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setPlaceHolder#0;class#ImageRequest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/IRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/com/example/utils/Dispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="53" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="1230">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open/src/image/src/com/example/image/ImageRequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="20" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.4250871" vertical-offset="401" max-vertical-offset="1050">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
           </folding>
         </state>
       </provider>

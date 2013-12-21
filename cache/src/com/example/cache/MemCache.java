@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class MemCache<KEY, T> implements ICache<KEY> {
+public abstract class MemCache<KEY, T> implements ICache<KEY> {
 
     private final Map<KEY, ICacheEntry> _store;
     private ICacheEvictionStrategy<T> _cacheEvictionStrategy;

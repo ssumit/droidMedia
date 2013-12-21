@@ -16,9 +16,9 @@ public interface IRequest {
 
     public interface Listener {
         /**
-         * Called when request either successfully completes or cancelled.
+         * Called when request either successfully completes or cancelled. the argument 'file' can be null.
          */
-        public void onFinish();
+        public void onFinish(String url, Object file);
 
         public void progress(String url, long dataDownloaded, long totalSize);
     }
