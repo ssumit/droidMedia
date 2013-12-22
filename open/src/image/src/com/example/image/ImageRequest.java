@@ -1,5 +1,6 @@
 package com.example.image;
 
+import android.graphics.Bitmap;
 import android.widget.ImageView;
 import com.example.utils.IRequest;
 
@@ -8,7 +9,7 @@ public class ImageRequest implements IRequest {
     private String _url;
     private ImageView _imageView;
     private int _drawableId = -1;
-    private Listener _listener;
+    private Listener<Bitmap> _listener;
     private ImageRequestManager _requestManager;
 
     public ImageRequest() {

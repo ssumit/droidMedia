@@ -14,11 +14,11 @@ public interface IRequest {
 
     public Listener getListener();
 
-    public interface Listener {
+    public interface Listener<T> {
         /**
          * Called when request either successfully completes or cancelled. the argument 'file' can be null.
          */
-        public void onFinish(String url, Object file);
+        public void onFinish(String url, T file);
 
         public void progress(String url, long dataDownloaded, long totalSize);
     }

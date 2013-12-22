@@ -1,9 +1,12 @@
 package com.example.image;
 
+import android.graphics.Bitmap;
 import com.example.cache.ICache;
 import com.example.cache.LRUCache;
 import com.example.utils.Dispatcher;
 import com.example.utils.IRequest;
+
+import java.io.IOException;
 
 /**
  * This class is responsible for caching and persistence which is specific to images.
@@ -40,12 +43,18 @@ public class ImageRequestManager {
 
     private void preProcessRequest(ImageRequest request) {
         final IRequest.Listener listener = request.getListener();
-        request.setListener(new IRequest.Listener() {
+        request.setListener(new IRequest.Listener<String>() {
             @Override
-            public void onFinish(String url, Object file) {
+            public void onFinish(String url, String filePath) {
                 //todo: do scaling, compressing, caching, persistence (delegate accordingly)
                 if (listener != null) {
-                    listener.onFinish(url, file);
+                    Bitmap bitmap = null;
+                    try {
+                        bitmap = new ImageBitmapConverter().getBitmap(filePath);
+                    } catch (IOException e) {
+                        bitmap = null;
+                    }
+                    listener.onFinish(url, bitmap);
                 }
             }
 
