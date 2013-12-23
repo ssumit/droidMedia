@@ -38,6 +38,10 @@ public class ImageRequest implements IRequest {
         }
     }
 
+    public String getUrl() {
+        return _url;
+    }
+
     private void setPlaceHolderIntoImageView() {
         if (_imageView != null && _drawableId != -1) {
             _imageView.setImageResource(_drawableId);

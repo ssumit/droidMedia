@@ -2,6 +2,7 @@ package com.example.image;
 
 import android.graphics.Bitmap;
 import com.example.cache.ICache;
+import com.example.cache.ICacheEntry;
 import com.example.cache.LRUCache;
 import com.example.utils.Dispatcher;
 import com.example.utils.IRequest;
@@ -16,15 +17,17 @@ import java.io.IOException;
 public class ImageRequestManager {
 
     private Dispatcher _dispatcher;
-    private ICache _cache;
+    private ICache<String> _cache;
+    private ImageDiskCache _imageDiskCache;
     private static ImageRequestManager _imageRequestManager = null;
 
     private ImageRequestManager() {
         _dispatcher = new Dispatcher();
-        _cache = new LRUCache();
+        _cache = new LRUCache<String>();
+        _imageDiskCache = new ImageDiskCache();
     }
 
-    public void setCache(ICache cache) {
+    public void setCache(ICache<String> cache) {
         _cache = cache;
     }
 
@@ -36,9 +39,26 @@ public class ImageRequestManager {
     }
 
     public void addRequest(ImageRequest request) {
-        //todo: see if the request has already been served
-        preProcessRequest(request);
-        _dispatcher.addRequest(request);
+        String url = request.getUrl();
+        if (url == null) {
+            return;
+        }
+        ICacheEntry cacheEntry = _cache.get(url);
+        if (cacheEntry != null) {
+            request.getListener().onFinish(url, ((ImageDiskCacheEntry)cacheEntry).getBitmap());
+        }
+        else {
+            cacheEntry = _imageDiskCache.get(url);
+            if (cacheEntry != null) {
+                Bitmap bitmap = ((ImageDiskCacheEntry)cacheEntry).getBitmap();
+                _cache.put(url, cacheEntry);
+                request.getListener().onFinish(url, bitmap);
+            }
+            else {
+                preProcessRequest(request);
+                _dispatcher.addRequest(request);
+            }
+        }
     }
 
     private void preProcessRequest(ImageRequest request) {
@@ -51,6 +71,7 @@ public class ImageRequestManager {
                     Bitmap bitmap = null;
                     try {
                         bitmap = new ImageBitmapConverter().getBitmap(filePath);
+                        _imageDiskCache.put(url, new ImageDiskCacheEntry(bitmap));
                     } catch (IOException e) {
                         bitmap = null;
                     }
