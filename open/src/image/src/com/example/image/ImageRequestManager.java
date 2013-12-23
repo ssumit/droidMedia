@@ -71,7 +71,9 @@ public class ImageRequestManager {
                     Bitmap bitmap = null;
                     try {
                         bitmap = new ImageBitmapConverter().getBitmap(filePath);
-                        _imageDiskCache.put(url, new ImageDiskCacheEntry(bitmap));
+                        ImageDiskCacheEntry cacheEntry = new ImageDiskCacheEntry(bitmap);
+                        _cache.put(url, cacheEntry);
+                        _imageDiskCache.put(url, cacheEntry);
                     } catch (IOException e) {
                         bitmap = null;
                     }
