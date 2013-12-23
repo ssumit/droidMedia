@@ -1,7 +1,10 @@
 out/
 *.iws
 *.iml
+.idea
+.idea*
 .idea/*
+.idea/workspace.xml
 workspace.xml
 tasks.xml
 local.properties
