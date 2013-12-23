@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cache/cache.iml" filepath="$PROJECT_DIR$/cache/cache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/image/image.iml" filepath="$PROJECT_DIR$/image/image.iml" />
-      <module fileurl="file://$PROJECT_DIR$/transport/transport.iml" filepath="$PROJECT_DIR$/transport/transport.iml" />
-      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droidMedia/src/main/java/cache/cache.iml" filepath="$PROJECT_DIR$/droidMedia/src/main/java/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droidMedia/src/main/java/image/image.iml" filepath="$PROJECT_DIR$/droidMedia/src/main/java/image/image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droidMedia/src/main/java/transport/transport.iml" filepath="$PROJECT_DIR$/droidMedia/src/main/java/transport/transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droidMedia/src/main/java/utils/utils.iml" filepath="$PROJECT_DIR$/droidMedia/src/main/java/utils/utils.iml" />
     </modules>
   </component>
 </project>
