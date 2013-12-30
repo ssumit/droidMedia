@@ -1,6 +1,7 @@
 package com.example.image;
 
 import android.graphics.Bitmap;
+import android.widget.ImageView;
 import com.example.cache.ICache;
 import com.example.cache.ICacheEntry;
 import com.example.cache.LRUCache;
@@ -8,6 +9,8 @@ import com.example.utils.Dispatcher;
 import com.example.utils.IRequest;
 
 import java.io.IOException;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * This class is responsible for caching and persistence which is specific to images.
@@ -19,12 +22,14 @@ public class ImageRequestManager {
     private Dispatcher _dispatcher;
     private ICache<String> _cache;
     private ImageDiskCache _imageDiskCache;
+    private Map<ImageView, ImageRequest> _imageViewLatestRequestMap;
     private static ImageRequestManager _imageRequestManager = null;
 
     private ImageRequestManager() {
         _dispatcher = new Dispatcher();
         _cache = new LRUCache<String>();
         _imageDiskCache = new ImageDiskCache();
+        _imageViewLatestRequestMap = new ConcurrentHashMap<ImageView, ImageRequest>();
     }
 
     public void setCache(ICache<String> cache) {
@@ -40,9 +45,12 @@ public class ImageRequestManager {
 
     public void addRequest(ImageRequest request) {
         String url = request.getUrl();
+        ImageView imageView = request.getImageView();
         if (url == null) {
+            _imageViewLatestRequestMap.remove(imageView);
             return;
         }
+        _imageViewLatestRequestMap.put(imageView, request);
         ICacheEntry cacheEntry = _cache.get(url);
         if (cacheEntry != null) {
             request.getListener().onFinish(url, ((ImageDiskCacheEntry)cacheEntry).getBitmap());
@@ -61,7 +69,7 @@ public class ImageRequestManager {
         }
     }
 
-    private void preProcessRequest(ImageRequest request) {
+    private void preProcessRequest(final ImageRequest request) {
         final IRequest.Listener listener = request.getListener();
         request.setListener(new IRequest.Listener<String>() {
             @Override
@@ -77,7 +85,12 @@ public class ImageRequestManager {
                     } catch (IOException e) {
                         bitmap = null;
                     }
-                    listener.onFinish(url, bitmap);
+                    ImageView imageView = request.getImageView();
+                    if (_imageViewLatestRequestMap.get(imageView).equals(request))
+                    {
+                        _imageViewLatestRequestMap.remove(imageView);
+                        listener.onFinish(url, bitmap);
+                    }
                 }
             }
 

@@ -33,9 +33,7 @@ public class ImageRequest implements IRequest {
 
     public void execute() {
         setPlaceHolderIntoImageView();
-        if (_url != null) {
-            _requestManager.addRequest(this);
-        }
+        _requestManager.addRequest(this);
     }
 
     public String getUrl() {
@@ -61,5 +59,9 @@ public class ImageRequest implements IRequest {
     @Override
     public Listener getListener() {
         return _listener;
+    }
+
+    public ImageView getImageView() {
+        return _imageView;
     }
 }
